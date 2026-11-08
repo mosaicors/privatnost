@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politika privatnosti – Salon Igor</title>
+<meta name="description" content="Politika privatnosti aplikacije za zakazivanje Salon Igor: koje podatke čuvamo, gde, koliko dugo, ko ih vidi i kako se brišu.">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root {
+    --bg: #faf6f1;
+    --card: #ffffff;
+    --text: #2b1d14;
+    --muted: #6b5546;
+    --accent: #6f4a2f;
+    --line: #e6d9cc;
+    --mark: #f3e7da;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1512;
+      --card: #261d18;
+      --text: #f1e8df;
+      --muted: #c3b2a4;
+      --accent: #d9b48f;
+      --line: #3d2f27;
+      --mark: #33261f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 0 16px 48px;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  header, main, footer { max-width: 42rem; margin: 0 auto; }
+  header { padding: 32px 0 8px; border-bottom: 1px solid var(--line); }
+  .kicker { margin: 0 0 4px; color: var(--muted); font-size: .95rem; letter-spacing: .02em; text-transform: uppercase; }
+  h1 { margin: 0 0 8px; font-size: 2rem; line-height: 1.2; color: var(--accent); }
+  .lead { margin: 0 0 4px; font-size: 1.1rem; }
+  .date { margin: 0 0 16px; color: var(--muted); }
+  nav { margin: 24px 0; padding: 16px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; }
+  nav p { margin: 0 0 8px; font-weight: 600; }
+  nav ol { margin: 0; padding-left: 22px; }
+  nav li { margin: 4px 0; }
+  h2 { margin: 40px 0 12px; font-size: 1.4rem; line-height: 1.3; color: var(--accent); scroll-margin-top: 16px; }
+  h3 { margin: 24px 0 8px; font-size: 1.1rem; }
+  p, li { margin: 0 0 10px; }
+  ul, ol { padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+  .box { padding: 16px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; }
+  .box p:last-child, .box ul:last-child { margin-bottom: 0; }
+  .summary li { margin-bottom: 10px; }
+  .contact { margin: 16px 0; padding: 16px; background: var(--mark); border-radius: 12px; }
+  .contact p { margin: 0 0 6px; }
+  .contact p:last-child { margin-bottom: 0; }
+  .steps li { margin-bottom: 6px; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: .95rem; }
+  @media (min-width: 600px) { body { font-size: 18px; } h1 { font-size: 2.4rem; } }
+  @media print { body { background: #fff; color: #000; } nav { display: none; } }
+</style>
+</head>
+<body>
+
+<header>
+  <p class="kicker">Aplikacija za zakazivanje</p>
+  <h1>Politika privatnosti</h1>
+  <p class="lead">Aplikacija <strong>Salon Igor</strong> za Android i iPhone</p>
+  <p class="date">Važi od 9. novembra 2026.</p>
+</header>
+
+<main>
+
+<nav aria-label="Sadržaj">
+  <p>Sadržaj</p>
+  <ol>
+    <li><a href="#ukratko">Ukratko</a></li>
+    <li><a href="#ko-smo">Ko smo i kako da nas kontaktirate</a></li>
+    <li><a href="#podaci">Koje podatke čuvamo i zašto</a></li>
+    <li><a href="#telefon">Šta aplikacija radi na vašem telefonu</a></li>
+    <li><a href="#gde">Gde se podaci čuvaju i kako su zaštićeni</a></li>
+    <li><a href="#koliko-dugo">Koliko dugo čuvamo podatke</a></li>
+    <li><a href="#brisanje-naloga">Kako da obrišete nalog i podatke</a></li>
+    <li><a href="#ko-vidi">Ko još vidi vaše podatke</a></li>
+    <li><a href="#deca">Deca</a></li>
+    <li><a href="#prava">Vaša prava</a></li>
+    <li><a href="#izmene">Izmene ove politike</a></li>
+  </ol>
+</nav>
+
+<h2 id="ukratko">Ukratko</h2>
+<div class="box">
+  <ul class="summary">
+    <li><strong>Čuvamo samo ono što treba za termin:</strong> vaše ime, broj telefona, zakazane termine i napomenu koju ostavite frizeru.</li>
+    <li><strong>Podaci stoje u bazi</strong> kod servisa Supabase, na serverima u Londonu, zaštićeni šifrovanom vezom i pravilima pristupa.</li>
+    <li><strong>Vidi ih samo salon.</strong> Ne prodajemo ih i ne dajemo nikome, nema reklama, nema analitike ni praćenja.</li>
+    <li><strong>Nalog brišete sami</strong> u aplikaciji (Moj nalog → Obriši nalog) ili nam pišete na mejl. Ime, broj i napomena tada nestaju iz svih termina.</li>
+  </ul>
+</div>
+
+<h2 id="ko-smo">1. Ko smo i kako da nas kontaktirate</h2>
+<p>Aplikaciju <strong>Salon Igor</strong> pravi i održava <strong>Nemanja Milovanović</strong>, fizičko lice iz Beograda, i objavljuje je pod imenom <strong>NMS Solutions</strong>. On je rukovalac podacima: odlučuje kako aplikacija radi sa vašim podacima i odgovara za njihovu zaštitu.</p>
+<p>Aplikacija služi za zakazivanje termina u salonu:</p>
+<div class="contact">
+  <p><strong>Frizerski salon Igor</strong></p>
+  <p>Vodovodska 25, Beograd (Čukarica)</p>
+  <p>Telefon: 011/251-9690</p>
+</div>
+<p>Salon u aplikaciji vidi termine svojih klijenata i koristi ih da vas primi u zakazano vreme, da vas pozove ako se nešto promeni i da vodi evidenciju o poslovanju.</p>
+<p>Za sva pitanja i zahteve u vezi sa podacima pišite na: <a href="mailto:nmssolustions@gmail.com">nmssolustions@gmail.com</a>. Odgovaramo najkasnije u roku od 30 dana.</p>
+
+<h2 id="podaci">2. Koje podatke čuvamo i zašto</h2>
+
+<h3>Ako ste klijent</h3>
+<ul>
+  <li><strong>Ime i broj telefona.</strong> Upisujete ih jednom, pri prvom zakazivanju, da salon zna ko dolazi i da može da vas pozove ako se termin promeni. Broj ne proveravamo SMS porukom. Ime i broj možete da promenite sami, na ekranu Moj nalog.</li>
+  <li><strong>Termini.</strong> Izabrana usluga, frizer, datum i vreme, cena u trenutku zakazivanja i stanje termina (zakazan, završen, otkazan ili niste došli), koje upisuje salon.</li>
+  <li><strong>Napomena za frizera</strong>, ako je napišete pri zakazivanju (do 200 znakova). Vide je frizer kod koga ste zakazali i vlasnik salona.</li>
+  <li><strong>Nalog.</strong> Pri prvom zakazivanju aplikacija sama napravi anonimni nalog vezan za vaš telefon, bez lozinke, mejla i SMS koda, pa sledeći put ništa ne kucate. Na telefonu ostaje samo ključ te prijave, da vas aplikacija prepozna.</li>
+  <li><strong>Obaveštenja u aplikaciji.</strong> Kad salon otkaže, pomeri ili vrati vaš termin, u bazi se upiše poruka koju vidite na početnoj strani.</li>
+</ul>
+<p>Osnov za ovo je usluga koju ste sami zatražili: bez imena i broja termin ne može da se zakaže, a bez podataka o terminu salon ne zna kad dolazite.</p>
+
+<h3>Ako ste osoblje salona (frizer ili vlasnik)</h3>
+<ul>
+  <li><strong>Email adresa i lozinka</strong> za prijavu, i uloga (vlasnik ili frizer). Lozinku čuva Supabase u zaštićenom obliku, tako da je niko, ni mi, ne može pročitati. Nalog pravi vlasnik salona.</li>
+  <li><strong>Ime, fotografija i kratak opis frizera</strong>, koje upisuje vlasnik. Vide ih svi korisnici aplikacije, kao i u izlogu salona. Fotografije stoje u skladištu Supabase-a i otvara ih svako ko zna njihovu adresu, a menja ih samo vlasnik.</li>
+  <li><strong>Raspored:</strong> smene, odsustva i termini, i obaveštenja o promenama u rasporedu.</li>
+</ul>
+
+<h3>Šta ne skupljamo</h3>
+<ul>
+  <li>Ne tražimo i ne čuvamo vašu lokaciju, kontakte, slike iz galerije ni podatke o plaćanju. Plaća se u salonu, kao i do sada.</li>
+  <li>Nema analitike, praćenja ponašanja, reklamnih mreža ni automatskog prijavljivanja padova aplikacije. Ako to dodamo (planirano je prijavljivanje grešaka, bez ličnih podataka), prvo dopunjujemo ovu politiku.</li>
+  <li>Nema automatskog odlučivanja ni profilisanja.</li>
+</ul>
+<p>Supabase, kao i svaki servis na internetu, vodi tehničke zapise o zahtevima koje aplikacija pošalje (na primer IP adresu i vreme). Oni služe sigurnosti i otklanjanju grešaka i čuvaju se kratko, po pravilima Supabase-a.</p>
+
+<h2 id="telefon">3. Šta aplikacija radi na vašem telefonu</h2>
+<p>Neke radnje samo otvaraju druge aplikacije na vašem telefonu. Nama se pri tome ništa ne šalje i ništa ne beležimo:</p>
+<ul>
+  <li><strong>Podseti me na telefonu</strong> otvara kalendar telefona sa pripremljenim terminom. Vi odlučujete da li ćete ga sačuvati. Aplikacija ne čita vaš kalendar; ako telefon zatraži dozvolu za kalendar, ona služi samo za dodavanje tog događaja.</li>
+  <li><strong>Pozovi</strong> i <strong>Pošalji poruku</strong> (za osoblje) otvaraju telefon ili poruke sa upisanim brojem i tekstom. Poziv ili poruka idu sa telefona osoblja, kao i inače, i aplikacija ne zna da li su poslati.</li>
+  <li><strong>Mapa</strong> na ekranu O salonu otvara mapu sa adresom salona.</li>
+  <li><strong>Slika frizera</strong> (samo vlasnik) otvara galeriju vlasnika da izabere fotografiju koja ide u skladište.</li>
+</ul>
+
+<h2 id="gde">4. Gde se podaci čuvaju i kako su zaštićeni</h2>
+<p>Baza podataka i skladište slika su kod servisa <strong>Supabase</strong> (Supabase, Inc.), na serverima u <strong>Londonu, Velika Britanija</strong>. Supabase je naš obrađivač: čuva podatke po našim uputstvima i svojim pravilima (<a href="https://supabase.com/privacy">supabase.com/privacy</a>) i ne koristi ih za svoje svrhe. Velika Britanija je potpisnica Konvencije 108 Saveta Evrope i spada u države sa primerenim nivoom zaštite po našem Zakonu o zaštiti podataka o ličnosti, pa za čuvanje podataka tamo nije potrebna posebna dozvola.</p>
+<p>Kako štitimo podatke:</p>
+<ul>
+  <li>Veza između aplikacije i baze je šifrovana (HTTPS).</li>
+  <li>Pravila pristupa važe u samoj bazi: klijent vidi samo svoje termine, frizer samo svoj raspored, a vlasnik ceo raspored. Slobodni termini se računaju iz zauzeća, bez imena i brojeva.</li>
+  <li>Ulogu osoblja daje samo vlasnik, iz kontrolne table baze, ne iz aplikacije.</li>
+  <li>Lozinke osoblja se čuvaju u zaštićenom obliku, a pristupni ključevi baze nisu u aplikaciji koju preuzimate.</li>
+</ul>
+<p>Nijedan sistem nije savršen. Ako se dogodi proboj koji može da vas ugrozi, obavestićemo vas i Poverenika, kako zakon traži.</p>
+
+<h2 id="koliko-dugo">5. Koliko dugo čuvamo podatke</h2>
+<ul>
+  <li><strong>Ime, broj telefona, napomene i termini:</strong> dok imate nalog. Kad obrišete nalog, ime, broj i napomena odmah nestaju iz svih termina.</li>
+  <li><strong>Obaveštenja u aplikaciji:</strong> brišu se automatski posle 90 dana, a vaša i odmah sa nalogom.</li>
+  <li><strong>Prošle posete bez ličnih podataka</strong> (datum, usluga, cena, frizer) salon zadržava za evidenciju i statistiku. Posle brisanja naloga ne mogu se povezati sa vama.</li>
+  <li><strong>Podaci osoblja:</strong> dok osoba radi u salonu. Pristup gasi vlasnik.</li>
+</ul>
+<p>Planiramo da iz starih termina automatski brišemo broj telefona posle određenog broja meseci. Kad to uvedemo, rok upisujemo ovde.</p>
+
+<h2 id="brisanje-naloga">6. Kako da obrišete nalog i podatke</h2>
+<p><strong>U aplikaciji</strong>, za minut:</p>
+<ol class="steps">
+  <li>Na početnoj strani dodirnite ikonicu čoveka gore levo (<strong>Moj nalog</strong>).</li>
+  <li>Dodirnite <strong>Obriši nalog</strong> i potvrdite.</li>
+</ol>
+<p>Šta se tada dešava:</p>
+<ul>
+  <li>budući termini se otkazuju, a salon o tome dobija obaveštenje;</li>
+  <li>iz svih termina nestaju vaše ime, broj telefona i napomena;</li>
+  <li>prošle posete ostaju salonu kao evidencija, bez ličnih podataka;</li>
+  <li>nalog, profil i vaša obaveštenja se brišu.</li>
+</ul>
+<p>Brisanje ne može da se vrati. Sledeći put zakazujete kao nov klijent.</p>
+<p><strong>Mejlom</strong>, ako ne možete u aplikaciju (na primer, izgubljen telefon ili obrisana aplikacija): pišite na <a href="mailto:nmssolustions@gmail.com">nmssolustions@gmail.com</a> i navedite broj telefona kojim ste zakazivali. Pošto broj nije potvrđen SMS porukom, možemo da vas pozovemo na taj broj da proverimo da je zahtev vaš. Podatke brišemo u roku od 30 dana i javljamo vam kad je gotovo.</p>
+<p>Važno: samo brisanje aplikacije sa telefona ne briše nalog. Podaci ostaju u bazi dok ih ne obrišete na jedan od ova dva načina.</p>
+
+<h2 id="ko-vidi">7. Ko još vidi vaše podatke</h2>
+<ul>
+  <li><strong>Salon.</strong> Frizer kod koga ste zakazali vidi vaše ime, broj, termin i napomenu za svoje termine, a vlasnik salona za sve termine. Koriste ih samo za vaš termin.</li>
+  <li><strong>Supabase</strong>, servis koji čuva bazu, kao obrađivač po našim uputstvima (vidi odeljak 4).</li>
+  <li><strong>Niko drugi.</strong> Podatke ne prodajemo, ne dajemo marketinškim firmama i ne koristimo za reklame. Dali bismo ih jedino državnom organu kad to zakon ili sud izričito nalože.</li>
+</ul>
+<p>Ako aplikacija jednog dana pređe na drugog izdavača (na primer na sam salon), podaci idu sa njom pod istim pravilima, a o tome ćemo vas obavestiti u aplikaciji.</p>
+
+<h2 id="deca">8. Deca</h2>
+<p>Aplikacija nije namenjena deci. Po Zakonu o zaštiti podataka o ličnosti dete koje je navršilo 15 godina može samo da pristane na korišćenje ovakve usluge, a mlađa deca samo uz saglasnost roditelja ili staratelja. Ne skupljamo svesno podatke dece mlađe od 15 godina. Ako kao roditelj ili staratelj primetite da je dete ostavilo svoje podatke, pišite nam na <a href="mailto:nmssolustions@gmail.com">nmssolustions@gmail.com</a> i obrisaćemo ih.</p>
+
+<h2 id="prava">9. Vaša prava</h2>
+<p>Po Zakonu o zaštiti podataka o ličnosti Republike Srbije imate pravo:</p>
+<ul>
+  <li>da saznate koje podatke o vama imamo i da dobijete njihovu kopiju (pristup);</li>
+  <li>da ih ispravite (ime i broj menjate sami na ekranu Moj nalog);</li>
+  <li>da ih obrišete (vidi odeljak 6);</li>
+  <li>da zatražite ograničenje obrade ili uložite prigovor na obradu;</li>
+  <li>da podatke dobijete u čitljivom obliku da ih prenesete drugde (prenosivost).</li>
+</ul>
+<p>Zahtev šaljete na <a href="mailto:nmssolustions@gmail.com">nmssolustions@gmail.com</a>. Odgovaramo besplatno, najkasnije u roku od 30 dana.</p>
+<p>Ako smatrate da sa vašim podacima nije postupano po zakonu, možete da se obratite Povereniku za informacije od javnog značaja i zaštitu podataka o ličnosti: Bulevar kralja Aleksandra 15, 11120 Beograd, <a href="https://www.poverenik.rs">www.poverenik.rs</a>.</p>
+
+<h2 id="izmene">10. Izmene ove politike</h2>
+<p>Kad aplikacija dobije nešto što menja rad sa podacima, na primer obaveštenja na telefon, prijavu Google, Apple ili email nalogom ili prijavljivanje grešaka, prvo dopunjujemo ovu politiku. Nova verzija je uvek na ovoj adresi, sa novim datumom na vrhu, a o bitnim izmenama obaveštavamo i u aplikaciji.</p>
+<p>Istorija izmena:</p>
+<ul>
+  <li>9. novembar 2026: prva verzija.</li>
+</ul>
+
+</main>
+
+<footer>
+  <p>Aplikacija Salon Igor (<code>rs.frizerskisalonigor.frizerski_salon</code>) · NMS Solutions, Beograd · Ova stranica nema kolačiće, skripte ni praćenje.</p>
+</footer>
+
+</body>
+</html>
